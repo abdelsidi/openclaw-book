@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كتاب OpenClaw AI التفاعلي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            color: white;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: #f0f0f0;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        .toc {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .chapter-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        .chapter-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .chapter-card p {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .chapter-number {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #e9ecef;
+        }
+        
+        .feature-card i {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card h3 {
+            color: #495057;
+            margin-bottom: 10px;
+        }
+        
+        .download-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .download-section h2 {
+            margin-bottom: 20px;
+        }
+        
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .download-btn {
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-3px);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            background: rgba(0,0,0,0.2);
+            border-radius: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .download-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 كتاب OpenClaw AI التفاعلي</h1>
+            <p>الدليل الشامل لاستخدام OpenClaw AI - من المبتدئ إلى الخبير</p>
+            <p>النسخة: 2026.2.21 | المؤلف: مجتمع OpenClaw AI</p>
+        </div>
+        
+        <div class="content">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #667eea;">🎯 محتويات الكتاب</h2>
+            
+            <div class="toc">
+                <a href="#chapter1" class="chapter-card">
+                    <div class="chapter-number">1</div>
+                    <h3>مقدمة لـ OpenClaw AI</h3>
+                    <p>تعرف على OpenClaw AI وأساسياته</p>
+                </a>
+                
+                <a href="#chapter2" class="chapter-card">
+                    <div class="chapter-number">2</div>
+                    <h3>التثبيت خطوة بخطوة</h3>
+                    <p>تعليمات التثبيت التفصيلية</p>
+                </a>
+                
+                <a href="#chapter3" class="chapter-card">
+                    <div class="chapter-number">3</div>
+                    <h3>التشغيل والاستخدام</h3>
+                    <p>كيفية تشغيل OpenClaw AI</p>
+                </a>
+                
+                <a href="#chapter4" class="chapter-card">
+                    <div class="chapter-number">4</div>
+                    <h3>التحديثات والصيانة</h3>
+                    <p>الحفاظ على OpenClaw AI محدثاً</p>
+                </a>
+                
+                <a href="#chapter5" class="chapter-card">
+                    <div class="chapter-number">5</div>
+                    <h3>الترجمة والتخصيص</h3>
+                    <p>تخصيص تجربتك الشخصية</p>
+                </a>
+                
+                <a href="#chapter6" class="chapter-card">
+                    <div class="chapter-number">6</div>
+                    <h3>الميزات المتقدمة</h3>
+                    <p>استكشاف الميزات المتقدمة</p>
+                </a>
+                
+                <a href="#chapter7" class="chapter-card">
+                    <div class="chapter-number">7</div>
+                    <h3>الأمان والأفضلية</h3>
+                    <p>ضمان أمان بياناتك</p>
+                </a>
+                
+                <a href="#conclusion" class="chapter-card">
+                    <div class="chapter-number">✓</div>
+                    <h3>الخاتمة</h3>
+                    <p>رحلتك مع OpenClaw AI</p>
+                </a>
+            </div>
+            
+            <h2 style="text-align: center; margin-bottom: 30px; color: #667eea;">🌟 الميزات الرئيسية</h2>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div style="font-size: 2.5em; margin-bottom: 15px;">🤖</div>
+                    <h3>ذكاء اصطناعي متقدم</h3>
+                    <p>استخدم أحدث تقنيات الذكاء الاصطناعي</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div style="font-size: 2.5em; margin-bottom: 15px;">🌐</div>
+                    <h3>دعم متعدد اللغات</h3>
+                    <p>يدعم العربية والإنجليزية</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div style="font-size: 2.5em; margin-bottom: 15px;">🔒</div>
+                    <h3>أمان عالي</h3>
+                    <p>بياناتك بأمان تام</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div style="font-size: 2.5em; margin-bottom: 15px;">📱</div>
+                    <h3>واجهة متجاوبة</h3>
+                    <p>يعمل على جميع الأجهزة</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div style="font-size: 2.5em; margin-bottom: 15px;">🚀</div>
+                    <h3>أداء عالي</h3>
+                    <p>سرعة استجابة فائقة</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div style="font-size: 2.5em; margin-bottom: 15px;">🎯</div>
+                    <h3>دقيق وموثوق</h3>
+                    <p>نتائج دقيقة وموثوقة</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="download-section">
+            <h2>📥 تحميل الكتاب</h2>
+            <p>احصل على نسخة كاملة من كتاب OpenClaw AI التفاعلي</p>
+            
+            <div class="download-buttons">
+                <a href="openclaw_book_arabic.pdf" class="download-btn" download="openclaw_book_arabic.pdf">
+                    📄 تحميل PDF
+                </a>
+                <a href="https://github.com/abdelsidi/openclaw-book" class="download-btn" target="_blank">
+                    🐙 عرض على GitHub
+                </a>
+                <a href="#read-online" class="download-btn" onclick="showChapters()">
+                    📖 قراءة أونلاين
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🎉 شكراً لاستخدامك OpenClaw AI!</p>
+            <p>OpenClaw AI - مساعدك الذكي الشخصي 🤖</p>
+            <p>الرابط: https://github.com/openclaw/openclaw</p>
+        </div>
+    </div>
+    
+    <script>
+        function showChapters() {
+            alert('📚 صفحة الفصول قيد التطوير');
+        }
+    </script>
+</body>
+</html>
